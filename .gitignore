@@ -42,3 +42,4 @@ yarn-debug.log*
 /node_modules/
 /archive_workspace/
 archive_workspace.tar.gz
+/Drive/

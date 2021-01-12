@@ -3,8 +3,8 @@ require 'zlib'
 require 'open3'
 
 
-archivename     = "archive_workspace.tar.gz"
-archivedirname  = "archive_workspace"
+archivename     = "small_archive_workspace.tar.gz"
+archivedirname  = "small_archive_workspace"
 
 puts "Compress the `#{archivedirname}`` directory to #{archivename}"
 

@@ -9,13 +9,15 @@
 
 3. ~~Download the `archive_workspace.tar.gz` to GoogleDrive.~~\
     ~~30. Link: https://drive.google.com/file/d/1bvUiwxZZAj26X__U4-8_qcYTpFBOQ6xg/view?usp=sharing~~ \
-
+                https://drive.google.com/file/d/1eOfiub-HNiHzk1a7xC-3reiWYP8PwyL4/view?usp=sharing \
+                SMALL_ARCHIVE_LINK  = "https://homebio.ru/static/small_archive_workspace.tar.gz" \
+                BIG_ARCHIVE_LINK    = "https://homebio.ru/static/archive_workspace.tar.gz" \
 
 4. Add the `download` action that will get `a big archive` from GoogleDrive by `Excone` \
     ~~40. Implement whole `getting_started`~~ \
-    41. Implement the `TarControllen` that mast have default actions. \
-    42. Add the `download` methods. \
-    43. Get `archive_workspace.tar.gz` from GoogleDrive using `Excon`. \
+    ~~41. Implement the `TarControllen` that mast have default actions.~~ \
+    ~~42. Add the `download` methods.~~ \
+    ~~43. Get `archive_workspace.tar.gz` from GoogleDrive using.~~ \
 
 5. Add the `unpack` action that will unpacking `a big archive`. \
 
