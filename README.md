@@ -12,7 +12,7 @@
 
 
 4. Add the `download` action that will get `a big archive` from GoogleDrive by `Excone`
-    40. Implement the `TarControllen` that mast have default actions. / investigate \
+    40. Implement the `TarControllen` that mast have default actions. / Implement whole `getting_started`
     41. Add the `download` methods. \
     42. Get `archive_workspace.tar.gz` from GoogleDrive using `Excon`. \
 

@@ -1,3 +1,11 @@
+root_to_article = "articles#index"
+
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root root_to_article
+  # get "/articles", to: root_to_article
+  # get "/articles/:id", to: "articles#show"
+
+  resources :articles do
+    resources :comments
+  end
 end
