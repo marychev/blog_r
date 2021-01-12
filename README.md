@@ -11,14 +11,15 @@
     ~~30. Link: https://drive.google.com/file/d/1bvUiwxZZAj26X__U4-8_qcYTpFBOQ6xg/view?usp=sharing~~ \
 
 
-4. Add the `download` action that will get `a big archive` from GoogleDrive by `Excone`
-    40. Implement the `TarControllen` that mast have default actions. / Implement whole `getting_started`
-    41. Add the `download` methods. \
-    42. Get `archive_workspace.tar.gz` from GoogleDrive using `Excon`. \
+4. Add the `download` action that will get `a big archive` from GoogleDrive by `Excone` \
+    ~~40. Implement whole `getting_started`~~ \
+    41. Implement the `TarControllen` that mast have default actions. \
+    42. Add the `download` methods. \
+    43. Get `archive_workspace.tar.gz` from GoogleDrive using `Excon`. \
 
-5. Add the `unpack` action that will unpacking `a big archive`.
+5. Add the `unpack` action that will unpacking `a big archive`. \
 
-6. Add `a schedule/redis` task fir both the action: `download` / `unpack`
+6. Add `a schedule/redis` task fir both the action: `download`/`unpack` \
 
 
 * ! The trouble can be hannened `Unicorn` settings.
