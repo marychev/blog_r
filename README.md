@@ -8,13 +8,13 @@
 
 
 3. ~~Download the `archive_workspace.tar.gz` to GoogleDrive.~~\
-    ~~30. Link: https://drive.google.com/file/d/1bvUiwxZZAj26X__U4-8_qcYTpFBOQ6xg/view?usp=sharing~~\
+    ~~30. Link: https://drive.google.com/file/d/1bvUiwxZZAj26X__U4-8_qcYTpFBOQ6xg/view?usp=sharing~~ \
 
 
 4. Add the `download` action that will get `a big archive` from GoogleDrive by `Excone`
-    40. Implement the `TarControllen` that mast have default actions. / investigate
-    41. Add the `download` methods.
-    42. Get `archive_workspace.tar.gz` from GoogleDrive using `Excon`.
+    40. Implement the `TarControllen` that mast have default actions. / investigate \
+    41. Add the `download` methods. \
+    42. Get `archive_workspace.tar.gz` from GoogleDrive using `Excon`. \
 
 5. Add the `unpack` action that will unpacking `a big archive`.
 
