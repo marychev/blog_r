@@ -8,11 +8,7 @@ BIG_ARCHIVE_LINK = "https://homebio.ru/static/archive_workspace.tar.gz"
 
 puts Dir["/tmp/*"]
 
-FileUtils.rm Dir.glob("/tmp/RENAMED.tar.gz*")
-puts ' ______________'
-
-puts Dir["/tmp/*"]
-
+# FileUtils.rm Dir.glob("/tmp/RENAMED.tar.gz*")
 
 
 # WORK - 1

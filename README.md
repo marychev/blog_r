@@ -13,7 +13,7 @@
                 SMALL_ARCHIVE_LINK  = "https://homebio.ru/static/small_archive_workspace.tar.gz" \
                 BIG_ARCHIVE_LINK    = "https://homebio.ru/static/archive_workspace.tar.gz" \
 
-4. Add the `download` action that will get `a big archive` from GoogleDrive by `Excone` \
+4. ~~Add the `download` action that will get `a big archive` from GoogleDrive~~ \
     ~~40. Implement whole `getting_started`~~ \
     ~~41. Implement the `TarControllen` that mast have default actions.~~ \
     ~~42. Add the `download` methods.~~ \
@@ -22,6 +22,7 @@
 5. Add the `unpack` action that will unpacking `a big archive`. \
 
 6. Add `a schedule/redis` task fir both the action: `download`/`unpack` \
+    ~~61. Add `ClearTmp` worker to redis and sidekiq~~
 
 
 * ! The trouble can be hannened `Unicorn` settings.

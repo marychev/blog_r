@@ -1,7 +1,5 @@
 require 'open-uri'
-require "rubygems"
 require "tempfile"
-require 'fileutils'
 
 
 class TarsController < ApplicationController
@@ -20,26 +18,26 @@ class TarsController < ApplicationController
     Tempfile.open(generate_name()) do |tmp|
       open(SMALL_ARCHIVE_LINK) do |remote_file|
         tmp << Zlib::GzipReader.new(remote_file).read
-
-        send_file(tmp, :type => 'application/tar+gzip', :filename => generate_name(), :disposition => 'attachment')    
+        send_file(tmp, :type => 'application/tar+gzip', :filename => generate_name(), :disposition => 'attachment')
       end
     end
+
+    ClearTmp.perform_async(generate_name())
   end
 
   def show_tmp
-    render plain: _show_tmp, status: 200
+    render plain: ClearTmp.show_tmp(generate_name()), status: 200
+  end
+
+  def clear_tmp
+    ClearTmp.perform_async(generate_name())
+    render plain: ClearTmp.show_tmp(generate_name())
   end
 
   def download_small_local
     download_to_dir(SMALL_ARCHIVE_LINK)
     msg = "Small archive #{generate_name()} was success download on the local machine into `Drive/` dir"
-    tmpfiles = Dir["/tmp/*"].to_s
-    render plain: "#{msg}\n\r#{tmpfiles}", status: 200
-  end
-
-  def clear_tmp
-    FileUtils.rm Dir.glob("/tmp/#{generate_name}*")
-    render plain: _show_tmp, status: 200
+    render plain: "#{msg}\n\r#{ClearTmp.show_tmp}", status: 200
   end
 
 
@@ -47,10 +45,6 @@ class TarsController < ApplicationController
 
   def generate_name
     "RENAMED.tar.gz"
-  end
-
-  def _show_tmp
-    Dir["/tmp/*"].to_s
   end
 
   def download_to_dir(uri)
